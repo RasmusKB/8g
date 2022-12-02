@@ -1,7 +1,10 @@
 module CyclicQueue
 
 type Value = int
+val mutable first : int option
+val mutable last : int option
 val mutable queue : Value option[]
+
 /// <summary>Create or clear the cyclic queue</summary>
 /// <param name="n">The maximum number of elements</param>
 val create: n: int -> unit

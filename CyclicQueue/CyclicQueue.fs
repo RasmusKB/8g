@@ -10,6 +10,8 @@ let mutable queue : Value option[] = [||]
 
 let create (n: int) : unit =
     queue <- Array.create n None
+    first <- None
+    last <- None
     ()
 
 let enqueue (e: Value) : bool =
